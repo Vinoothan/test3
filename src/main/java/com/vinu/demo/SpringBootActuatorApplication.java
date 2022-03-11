@@ -9,7 +9,8 @@ public class SpringBootActuatorApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootActuatorApplication.class, args);
 		System.out.println("Welcome to SpringBootActuatorApplication");
-
+		
+		System.out.println("Welcome to GitHb Second Commit");
 		
 	}
 
