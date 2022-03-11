@@ -1,0 +1,32 @@
+###############
+1. Just added spring-boot-starter-actuator dependency and no changes in application properties
+
+<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+
+2. just run these port
+		
+		 Request: http://localhost:8083/actuator
+		 Response:
+			  "_links": {
+			    "self": {
+			      "href": "http://localhost:8083/actuator",
+			      "templated": false
+			    },
+			    "health": {
+			      "href": "http://localhost:8083/actuator/health",
+			      "templated": false
+			    },
+			    "health-path": {
+			      "href": "http://localhost:8083/actuator/health/{*path}",
+			      "templated": true
+			    }
+			  }
+			}
+			
+			
+			Request: http://localhost:8083/actuator/health
+			Response: {"status":"UP"}
+		
